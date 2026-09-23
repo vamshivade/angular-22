@@ -1,0 +1,114 @@
+<div class="h-[90vh] bg-gray-50 p-8">
+  <h1 class="text-4xl font-bold text-center text-gray-800">Products</h1>
+
+  <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10">
+    <div
+      class="bg-white p-6 rounded-xl shadow cursor-pointer"
+      [routerLink]="['/pages/product-details', 101]"
+    >
+      <h2 class="text-xl font-bold">Laptop</h2>
+      <p class="text-gray-500 mt-2">Powerful laptop for everyday work.</p>
+      <p class="text-blue-600 font-bold text-xl mt-4">₹50,000</p>
+    </div>
+
+    <div
+      class="bg-white p-6 rounded-xl shadow cursor-pointer"
+      [routerLink]="['/pages/product-details', 102]"
+    >
+      <h2 class="text-xl font-bold">Mobile</h2>
+      <p class="text-gray-500 mt-2">Modern smartphone with great features.</p>
+      <p class="text-blue-600 font-bold text-xl mt-4">₹25,000</p>
+    </div>
+
+    <div
+      class="bg-white p-6 rounded-xl shadow cursor-pointer"
+      [routerLink]="['/pages/product-details', 103]"
+    >
+      <h2 class="text-xl font-bold">Headphones</h2>
+      <p class="text-gray-500 mt-2">Wireless headphones with clear sound.</p>
+      <p class="text-blue-600 font-bold text-xl mt-4">₹3,000</p>
+    </div>
+  </div> -->
+
+  <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10">
+    <div
+      class="bg-white p-6 rounded-xl shadow cursor-pointer"
+      [routerLink]="['/pages/product-details', 101]"
+      [queryParams]="{ category: 'laptop', sort: 'price' }"
+    >
+      <h2 class="text-xl font-bold">Laptop</h2>
+      <p class="text-gray-500 mt-2">Powerful laptop for everyday work.</p>
+      <p class="text-blue-600 font-bold text-xl mt-4">₹50,000</p>
+    </div>
+
+    <div
+      class="bg-white p-6 rounded-xl shadow cursor-pointer"
+      [routerLink]="['/pages/product-details', 102]"
+      [queryParams]="{ category: 'mobile', sort: 'price' }"
+    >
+      <h2 class="text-xl font-bold">Mobile</h2>
+      <p class="text-gray-500 mt-2">Modern smartphone with great features.</p>
+      <p class="text-blue-600 font-bold text-xl mt-4">₹25,000</p>
+    </div>
+
+    <div
+      class="bg-white p-6 rounded-xl shadow cursor-pointer"
+      [routerLink]="['/pages/product-details', 103]"
+      [queryParams]="{ category: 'headphones', sort: 'price' }"
+    >
+      <h2 class="text-xl font-bold">Headphones</h2>
+      <p class="text-gray-500 mt-2">Wireless headphones with clear sound.</p>
+      <p class="text-blue-600 font-bold text-xl mt-4">₹3,000</p>
+    </div>
+  </div> -->
+
+  <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10">
+    <div class="bg-white p-6 rounded-xl shadow cursor-pointer" (click)="viewDetails(101)">
+      <h2 class="text-xl font-bold">Laptop</h2>
+      <p class="text-gray-500 mt-2">Powerful laptop for everyday work.</p>
+      <p class="text-blue-600 font-bold text-xl mt-4">₹50,000</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow cursor-pointer" (click)="viewDetails(102)">
+      <h2 class="text-xl font-bold">Mobile</h2>
+      <p class="text-gray-500 mt-2">Modern smartphone with great features.</p>
+      <p class="text-blue-600 font-bold text-xl mt-4">₹25,000</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow cursor-pointer" (click)="viewDetails(103)">
+      <h2 class="text-xl font-bold">Headphones</h2>
+      <p class="text-gray-500 mt-2">Wireless headphones with clear sound.</p>
+      <p class="text-blue-600 font-bold text-xl mt-4">₹3,000</p>
+    </div>
+  </div> -->
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10">
+    <div
+      class="bg-white p-6 rounded-xl shadow cursor-pointer"
+      (click)="viewDetails(101, 'laptop', 'price')"
+    >
+      <h2 class="text-xl font-bold">Laptop</h2>
+      <p class="text-gray-500 mt-2">Powerful laptop for everyday work.</p>
+      <p class="text-blue-600 font-bold text-xl mt-4">₹50,000</p>
+    </div>
+
+    <div
+      class="bg-white p-6 rounded-xl shadow cursor-pointer"
+      (click)="viewDetails(102, 'mobile', 'price')"
+    >
+      <h2 class="text-xl font-bold">Mobile</h2>
+      <p class="text-gray-500 mt-2">Modern smartphone with great features.</p>
+      <p class="text-blue-600 font-bold text-xl mt-4">₹25,000</p>
+    </div>
+
+    <div
+      class="bg-white p-6 rounded-xl shadow cursor-pointer"
+      (click)="viewDetails(103, 'headphones', 'price')"
+    >
+      <h2 class="text-xl font-bold">Headphones</h2>
+      <p class="text-gray-500 mt-2">Wireless headphones with clear sound.</p>
+      <p class="text-blue-600 font-bold text-xl mt-4">₹3,000</p>
+    </div>
+  </div>
+  
+</div>

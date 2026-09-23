@@ -1,0 +1,54 @@
+<div class="min-h-[90vh] w-full box-border flex gap-5 m-0 p-4">
+  
+  <!-- Sidebar -->
+  <aside class="w-1/5 shrink-0 p-3">
+    <nav>
+      <ul class="flex flex-col gap-5">
+        <li>
+          <a
+            [routerLink]="['dashboard-home']"
+            routerLinkActive="text-xl text-blue-700 border border-blue-500 p-1 px-4 rounded"
+          >
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a
+            [routerLink]="['profile']"
+            routerLinkActive="text-xl text-blue-700 border border-blue-500 p-1 px-4 rounded"
+          >
+            Profile
+          </a>
+        </li>
+
+        <li>
+          <a
+            [routerLink]="['settings']"
+            routerLinkActive="text-xl text-blue-700 border border-blue-500 p-1 px-4 rounded"
+          >
+            Settings
+          </a>
+        </li>
+
+        <li>
+          <a
+            [routerLink]="['orders']"
+            routerLinkActive="text-xl text-blue-700 border border-blue-500 p-1 px-4 rounded"
+          >
+            Orders
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Divider -->
+  <div class="w-px bg-gray-300 shrink-0"></div>
+
+  <!-- Dashboard Content -->
+  <section class="flex-1 min-w-0 p-3">
+    <router-outlet></router-outlet>
+  </section>
+
+</div>

@@ -1,0 +1,11 @@
+.active {
+  background: green;
+  border: 3px solid lightgreen;
+  color: white;
+}
+
+.inactive {
+  background: red;
+  border: 3px solid lightpink;
+  color: white;
+}
