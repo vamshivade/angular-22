@@ -6,12 +6,18 @@ import { Register } from './pages/register/register';
 
 import { PageNotfound } from './pages/page-notfound/page-notfound';
 import { authGuard } from './guards/auth-guard';
+import { Signal } from './pages/signal/signal';
 
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'pages/login',
+    redirectTo: 'pages/signal',
     pathMatch: 'full',
+  },
+
+  {
+    path: 'pages/signal',
+    component: Signal,
   },
 
   {
