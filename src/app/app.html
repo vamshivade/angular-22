@@ -7,6 +7,15 @@
       <ul class="flex items-center gap-10">
         <li class="text-xl">
           <a
+            routerLink="/pages/parent"
+            routerLinkActive="text-2xl text-blue-700"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            Parent
+          </a>
+        </li>
+        <li class="text-xl">
+          <a
             routerLink="/pages/signal"
             routerLinkActive="text-2xl text-blue-700"
             [routerLinkActiveOptions]="{ exact: true }"

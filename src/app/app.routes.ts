@@ -7,12 +7,24 @@ import { Register } from './pages/register/register';
 import { PageNotfound } from './pages/page-notfound/page-notfound';
 import { authGuard } from './guards/auth-guard';
 import { Signal } from './pages/signal/signal';
+import { Child } from './pages/child/child';
+import { Parent } from './pages/parent/parent';
 
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'pages/signal',
+    redirectTo: 'pages/parent',
     pathMatch: 'full',
+  },
+
+  {
+    path: 'pages/parent',
+    component: Parent,
+  },
+
+  {
+    path: 'pages/child',
+    component: Child,
   },
 
   {

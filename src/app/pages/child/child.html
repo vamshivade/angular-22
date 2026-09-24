@@ -1,0 +1,23 @@
+<h2 class="text-xl font-bold">Child Component</h2>
+<br />
+<h2 class="text-lg font-bold">Username</h2>
+<p>{{ username() }}</p>
+<br />
+<h2 class="text-lg font-bold">Quantity</h2>
+<p>{{ quantityValue() }}</p>
+<br />
+<button class="text-lg font-bold bg-green-700 text-white p-2 px-3" (click)="emitQuantity()">
+  emitQuantity
+</button>
+<br /><br />
+<h2 class="text-lg font-bold">Modle</h2>
+<p>{{ childQuantity() }}</p>
+<br />
+<div class="flex gap-2">
+  <button class="text-lg font-bold bg-green-700 text-white p-2 px-3" (click)="increase()">
+    Increase
+  </button>
+  <button class="text-lg font-bold bg-red-700 text-white p-2 px-3" (click)="decrease()">
+    Decrease
+  </button>
+</div>

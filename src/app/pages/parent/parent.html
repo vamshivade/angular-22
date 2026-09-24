@@ -1,0 +1,25 @@
+<div class="min-h-[90vh] flex items-center">
+  <div class="flex gap-2 w-2/3 mx-auto">
+    <div class="border flex-1 p-4">
+      <h2 class="text-xl font-bold">Parent Component</h2>
+      <br />
+      <h2 class="text-lg font-bold">Username</h2>
+      <p>{{ userName }}</p>
+      <br />
+      <h2 class="text-lg font-bold">Quantity</h2>
+      <p>{{ quantityValueP }}</p>
+      <br />
+      <h2 class="text-lg font-bold">parentQuantity</h2>
+      <p>{{ parentQuantity }}</p>
+    </div>
+
+    <div class="border flex-1 p-4">
+      <app-child
+        [username]="userName"
+        [quantityValue]="quantityValueP"
+        (quantity)="getChildQuantity($event)"
+        [(childQuantity)]="parentQuantity"
+      ></app-child>
+    </div>
+  </div>
+</div>
